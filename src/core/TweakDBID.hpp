@@ -9,9 +9,14 @@ namespace TweakXL {
 /**
  * TweakDBID - 64-bit identifier for TweakDB entries
  *
- * TweakDB uses FNV1A64 hash of string identifiers.
- * Format: "Package.Group.Item:Property"
- * Example: "Items.Preset_Katana_Default:quality"
+ * TweakDB uses CRC32 hash combined with string length.
+ * Format: CRC32(lowercase_name) + (length << 32)
+ *
+ * Examples:
+ *   "Items.Preset_Katana_Default:quality"
+ *   "BaseStats.Health"
+ *
+ * Maximum name length: 255 characters
  */
 class TweakDBID {
 public:
@@ -38,8 +43,11 @@ public:
     // String conversion
     String ToString() const;
 
-    // Static hash function (FNV1A64)
+    // Static hash function (CRC32 + length)
     static uint64 Hash(const String& name);
+
+    // CRC32 calculation (used internally)
+    static uint32 CRC32(const String& name);
 
     // Parse TweakDBID from string
     static TweakDBID FromString(const String& name);

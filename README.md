@@ -82,6 +82,8 @@ Cyberpunk 2077: Ultimate Edition was released natively for macOS on **July 17, 2
 |----------|-------------|
 | [RESEARCH_FINDINGS.md](docs/RESEARCH_FINDINGS.md) | Comprehensive research: TweakDB format, modding ecosystem, tools |
 | [REVISED_PLAN.md](docs/REVISED_PLAN.md) | Detailed 8-phase implementation plan (15 weeks) |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Layered architecture: Offline patching + optional runtime hooking |
+| [MOD_COMPATIBILITY.md](docs/MOD_COMPATIBILITY.md) | Mod compatibility design: Windows mods work with zero changes |
 | [getting-started.md](docs/getting-started.md) | Development environment setup |
 | [mac-port-plan.md](docs/mac-port-plan.md) | Original high-level plan (superseded by REVISED_PLAN) |
 

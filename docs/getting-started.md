@@ -2,10 +2,26 @@
 
 ## Current Status
 
-**Phase:** Phase 0 (Bootstrap)
+**Phase:** Phase 1 (Foundation) - Starting
 **Branch:** `claude/tweakxl-macos-port-plan-01T9jS4k4J5gsWNHShochisQ`
 
-We're starting fresh with this port. While the plan mentions some tools like `tweakdb-patcher` as if they exist, we're building everything from scratch for this new repository.
+**🎯 NEW: Research Complete!**
+
+We've completed comprehensive research into Cyberpunk 2077 modding, TweakDB format, and TweakXL implementation. See:
+- **[RESEARCH_FINDINGS.md](RESEARCH_FINDINGS.md)** - Detailed research results
+- **[REVISED_PLAN.md](REVISED_PLAN.md)** - Realistic implementation plan
+
+## Key Findings
+
+### Cyberpunk 2077 IS on macOS!
+- Native macOS port released **July 17, 2025**
+- Uses Metal 3 and Apple Silicon
+- We're targeting a **real native game**, not emulation!
+
+### Why Offline Patching?
+- Windows TweakXL uses **runtime DLL injection** (RED4ext)
+- RED4ext is Windows-only, no macOS equivalent
+- **Solution:** Offline patching - modify TweakDB before game launch
 
 ## What We Have
 

@@ -11,6 +11,7 @@ set(TEST_SOURCES
     core/Record_test.cpp
     tweakdb/BinaryReader_test.cpp
     tweakdb/TweakDBReader_test.cpp
+    parsers/YAMLParser_test.cpp
 )
 
 # Create test executable

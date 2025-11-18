@@ -1,0 +1,32 @@
+# Example mod: Inventory and Array Operations
+# This mod demonstrates array manipulation operations
+
+# Add items to player starting inventory
+Player.StartingInventory:
+  $append:
+    - Items.FirstAidKit
+    - Items.MaxDoc
+    - Items.Oxy Booster
+    - Items.BounceBack
+    - Items.Money_1000
+
+# Remove unwanted items from loot pools
+Loot.CommonItems:
+  $remove:
+    - Items.Junk_Shard_Damaged
+    - Items.Junk_ElectronicScrap
+
+# Replace entire array
+NPC.VendorInventory.Weapons:
+  $assign:
+    - Items.Preset_Overture
+    - Items.Preset_Katana
+    - Items.Preset_Mantis_Blades
+    - Items.Preset_Sidewinder
+
+# Add new skills to skill tree
+Player.AvailableSkills:
+  $append:
+    - Skills.Hacking_Level_5
+    - Skills.Engineering_Level_5
+    - Skills.Combat_Level_5

@@ -9,6 +9,8 @@ set(TEST_SOURCES
     core/Value_test.cpp
     core/Flat_test.cpp
     core/Record_test.cpp
+    tweakdb/BinaryReader_test.cpp
+    tweakdb/TweakDBReader_test.cpp
 )
 
 # Create test executable

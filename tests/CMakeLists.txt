@@ -12,6 +12,7 @@ set(TEST_SOURCES
     tweakdb/BinaryReader_test.cpp
     tweakdb/TweakDBReader_test.cpp
     parsers/YAMLParser_test.cpp
+    integration/ModPipeline_test.cpp
 )
 
 # Create test executable

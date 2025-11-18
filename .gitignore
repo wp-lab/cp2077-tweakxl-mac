@@ -31,6 +31,7 @@ CPackSourceConfig.cmake
 
 # Test outputs
 Testing/
+test_*.bin
 
 # OS files
 .DS_Store

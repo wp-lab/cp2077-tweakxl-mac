@@ -1,0 +1,34 @@
+# Example mod: Difficulty Rebalance
+# This mod makes the game more challenging by adjusting enemy stats
+# and reducing player advantages
+
+# Increase enemy health and damage
+NPC.Enemy.Health:
+  $assign: 1500
+
+NPC.Enemy.Damage:
+  $assign: 150
+
+# Reduce healing effectiveness
+Items.HealthKit.HealAmount: 150
+Items.HealthBooster.HealAmount: 80
+
+# Make crafting more expensive
+Crafting.RequiredMaterials:
+  $append:
+    - Materials.RareCircuit
+    - Materials.EpicCapacitor
+
+# Adjust economy
+Vendor.Prices.Weapons: 1.5
+Vendor.Prices.Cyberware: 2.0
+Vendor.Prices.Quickhacks: 1.8
+
+# Modify skill progression
+Player.SkillProgression.XPMultiplier: 0.7
+Player.SkillProgression.StreetCredGain: 0.8
+
+# Tougher police response
+NCPD.ResponseTime: 10.0
+NCPD.ReinforceLevel: 5
+NCPD.MaxStars: 6

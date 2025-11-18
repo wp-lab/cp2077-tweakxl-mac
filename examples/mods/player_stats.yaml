@@ -1,0 +1,17 @@
+# Example mod: Increased Player Stats
+# This mod boosts player health, stamina, and damage
+
+# Simple flat modifications
+Player.BaseStats.Health: 1000
+Player.BaseStats.Stamina: 500
+Player.BaseStats.Armor: 200
+
+# Float values
+Player.Movement.Speed: 1.5
+Player.Combat.CritChance: 0.35
+Player.Combat.CritDamage: 2.5
+
+# Boolean flags
+Player.Perks.FastHacking: true
+Player.Abilities.DoubleJump: true
+Player.Skills.Quickhacking: true

@@ -1,0 +1,27 @@
+# Example mod: Custom Weapons
+# This mod creates new weapon variants with enhanced stats
+
+# Create a new katana based on default preset
+Items.MyCustomKatana:
+  $type: Weapon_Record
+  $base: Items.Preset_Katana_Default
+  displayName: "Cybernetic Blade"
+  damage: 250
+  range: 3.0
+  attackSpeed: 1.8
+  critChance: 0.45
+
+# Create a custom pistol
+Items.MyCustomPistol:
+  $type: Weapon_Record
+  $base: Items.Preset_Sidewinder_Default
+  displayName: "Digital Deagle"
+  damage: 180
+  range: 50.0
+  magazineSize: 12
+  reloadTime: 1.2
+  critDamage: 3.0
+
+# Modify existing weapon
+Items.Preset_Mantis_Blades.damage: 300
+Items.Preset_Mantis_Blades.attackSpeed: 2.0

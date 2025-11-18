@@ -19,6 +19,7 @@ set(CORE_HEADERS
 # TweakDB I/O sources
 set(TWEAKDB_SOURCES
     tweakdb/BinaryReader.cpp
+    tweakdb/BinaryWriter.cpp
     tweakdb/Reader.cpp
     tweakdb/Writer.cpp
     tweakdb/Database.cpp
@@ -26,6 +27,7 @@ set(TWEAKDB_SOURCES
 
 set(TWEAKDB_HEADERS
     tweakdb/BinaryReader.hpp
+    tweakdb/BinaryWriter.hpp
     tweakdb/Reader.hpp
     tweakdb/Writer.hpp
     tweakdb/Database.hpp
